@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203d37">
+  <title>AveStore – Temukan suara, ciptakan cerita</title>
+  <meta name="description" content="AveStore menyediakan gitar, piano, drum, bass, dan perlengkapan audio untuk menemani perjalanan bermusik Anda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="container hero" aria-label="Pilihan AveStore">
+      <div class="hero-card">
+        <button class="hero-nav prev" id="hero-prev" type="button" aria-label="Tayangan sebelumnya" data-icon="chev-l" data-size="20"></button>
+        <div class="hero-text" id="hero-text">
+          <span class="pill-badge"><span data-icon="spark" data-size="12"></span><span id="hero-badge">Pilihan AveStore</span></span>
+          <h1><span id="hero-l1">Temukan suara</span><span class="accent" id="hero-l2">versi terbaikmu.</span></h1>
+          <p id="hero-p">Jelajahi alat musik dan perlengkapan audio untuk memulai atau mengembangkan perjalanan bermusikmu.</p>
+          <a class="btn" id="hero-cta" href="boutique.html">Jelajahi koleksi <span data-icon="chev-r" data-size="16"></span></a>
+          <ul class="hero-feats">
+            <li><span data-icon="package" data-size="27"></span><span>Pilihan instrumen<br>untuk berbagai kebutuhan</span></li>
+            <li><span data-icon="music" data-size="27"></span><span>Beragam kategori<br>alat musik dan audio</span></li>
+            <li><span data-icon="message" data-size="27"></span><span>Konsultasi produk<br>lebih mudah</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+        <button class="hero-nav next" id="hero-next" type="button" aria-label="Tayangan berikutnya" data-icon="chev-r" data-size="20"></button>
+        <div class="dots" id="hero-dots" role="tablist" aria-label="Pilih tayangan"></div>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="t-cat">
+      <div class="sec-head">
+        <div><span class="eyebrow">Jelajahi AveStore</span><h2 id="t-cat">Temukan instrumen pilihanmu</h2></div>
+        <a class="link-green" href="boutique.html">Lihat semua kategori <span data-icon="arrow-r" data-size="16"></span></a>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </section>
+
+    <section class="container section" aria-labelledby="t-best">
+      <div class="sec-head">
+        <div><span class="eyebrow">Pilihan untukmu</span><h2 id="t-best">Produk unggulan</h2></div>
+        <div class="arrows">
+          <button class="round-btn" id="best-prev" type="button" aria-label="Produk sebelumnya" data-icon="chev-l" data-size="18"></button>
+          <button class="round-btn" id="best-next" type="button" aria-label="Produk berikutnya" data-icon="chev-r" data-size="18"></button>
+        </div>
+      </div>
+      <div class="track" id="best-track" aria-label="Daftar produk unggulan"></div>
+    </section>
+
+    <section class="container section" aria-label="Penawaran AveStore">
+      <div class="promo">
+        <div class="promo-text">
+          <span class="pill-badge white" id="promo-badge">Pilihan untuk mulai berkarya</span>
+          <h2><span class="big" id="promo-title">Perlengkapan yang tepat,</span><span class="sub" id="promo-emphasis">inspirasi tanpa batas.</span></h2>
+          <p id="promo-description">Temukan instrumen dan perlengkapan pendukung untuk mewujudkan ide musikmu.</p>
+          <a class="btn-outline" href="boutique.html" id="promo-link">Jelajahi semua produk <span data-icon="chev-r" data-size="16"></span></a>
+        </div>
+        <div class="promo-art" id="promo-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="container section" aria-label="Komitmen AveStore">
+      <ul class="trust">
+        <li><span data-icon="music" data-size="30"></span><div><strong>Beragam instrumen</strong><small>Untuk berbagai gaya bermusik</small></div></li>
+        <li><span data-icon="layers" data-size="30"></span><div><strong>Detail produk jelas</strong><small>Spesifikasi dan variasi tersedia</small></div></li>
+        <li><span data-icon="message" data-size="30"></span><div><strong>Konsultasi mudah</strong><small>Hubungi toko untuk bertanya</small></div></li>
+        <li><span data-icon="heart" data-size="30"></span><div><strong>Dukung karyamu</strong><small>Mulai perjalanan musikmu</small></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203d37">
+  <title>Kontak – AveStore</title>
+  <meta name="description" content="Hubungi AveStore untuk bertanya tentang gitar, piano, drum, bass, dan perlengkapan audio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+  <main class="container contact-main">
+    <div class="page-head">
+      <span class="eyebrow">Hubungi AveStore</span>
+      <h1>Mari mulai obrolan musik.</h1>
+      <p>Ada pertanyaan tentang instrumen, variasi, atau pesanan? Kirim pesan kepada kami.</p>
+    </div>
+
+    <div class="contact-grid">
+      <section class="info-list" aria-label="Informasi kontak AveStore">
+        <div class="info-card">
+          <span class="bubble" data-icon="pin" data-size="22"></span>
+          <div><strong>Alamat toko</strong><span id="c-address">Alamat toko belum diatur.</span></div>
+        </div>
+        <a class="info-card" id="c-wa" href="#contact-form">
+          <span class="bubble" data-icon="whatsapp" data-size="22"></span>
+          <div><strong>WhatsApp</strong><span id="c-wa-text">Nomor WhatsApp belum diatur.</span></div>
+        </a>
+        <a class="info-card" id="c-ig" href="#contact-form">
+          <span class="bubble" data-icon="instagram" data-size="22"></span>
+          <div><strong>Instagram</strong><span id="c-ig-text">Akun Instagram belum diatur.</span></div>
+        </a>
+        <a class="info-card" id="c-tt" href="#contact-form">
+          <span class="bubble" data-icon="tiktok" data-size="22"></span>
+          <div><strong>TikTok</strong><span id="c-tt-text">Akun TikTok belum diatur.</span></div>
+        </a>
+        <a class="info-card" id="c-mail" href="#contact-form">
+          <span class="bubble" data-icon="mail" data-size="22"></span>
+          <div><strong>Email</strong><span id="c-mail-text">Alamat email belum diatur.</span></div>
+        </a>
+        <p class="business-hours" id="c-hours" hidden></p>
+        <a class="btn contact-cta" id="c-cta" href="#contact-form">Hubungi AveStore <span data-icon="chev-r" data-size="16"></span></a>
+      </section>
+
+      <form class="contact-form" id="contact-form">
+        <h2>Kirim pesan</h2>
+        <p class="form-intro">Isi formulir ini. Pesan akan disiapkan melalui WhatsApp atau email sesuai konfigurasi toko.</p>
+        <label for="f-name">Nama</label>
+        <input id="f-name" name="name" type="text" required autocomplete="name" maxlength="80" placeholder="Nama Anda">
+        <label for="f-sub">Subjek</label>
+        <input id="f-sub" name="subject" type="text" maxlength="120" placeholder="Contoh: Ketersediaan gitar akustik">
+        <label for="f-msg">Pesan</label>
+        <textarea id="f-msg" name="message" rows="5" required maxlength="1500" placeholder="Tulis pesan Anda di sini"></textarea>
+        <button class="btn" type="submit">Kirim pesan <span data-icon="send" data-size="16"></span></button>
+        <small id="contact-form-note">Pastikan kontak toko sudah diisi melalui config.js sebelum website dipublikasikan.</small>
+      </form>
+    </div>
+
+    <section class="about" id="a-propos" aria-labelledby="t-about">
+      <span class="eyebrow">Tentang Kami</span>
+      <h2 id="t-about">AveStore, teman perjalanan bermusikmu.</h2>
+      <p id="about-description">AveStore menyediakan alat musik dan perlengkapan audio untuk menemani setiap proses berkarya.</p>
+      <ul class="trust">
+        <li><span data-icon="guitar" data-size="30"></span><div><strong>Beragam instrumen</strong><small>Gitar, piano, drum, bass, dan lainnya</small></div></li>
+        <li><span data-icon="list-check" data-size="30"></span><div><strong>Informasi terperinci</strong><small>Deskripsi dan variasi produk</small></div></li>
+        <li><span data-icon="message" data-size="30"></span><div><strong>Komunikasi langsung</strong><small>Tanyakan kebutuhanmu kepada kami</small></div></li>
+        <li><span data-icon="music" data-size="30"></span><div><strong>Untuk semua perjalanan</strong><small>Dari belajar hingga tampil</small></div></li>
+      </ul>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
